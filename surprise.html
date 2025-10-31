@@ -1,15 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>For You 💛</title>
-<link rel="stylesheet" href="surprise.css">
+  <meta charset="UTF-8">
+  <title>Surprise</title>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: #ffeb73; /* aesthetic soft yellow */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+    }
+
+    .emoji {
+      font-size: 120px;
+      opacity: 0.18;
+      position: absolute;
+    }
+
+    .emoji.left {
+      top: 20%;
+      left: 15%;
+    }
+
+    .emoji.right {
+      bottom: 15%;
+      right: 10%;
+    }
+
+    h1 {
+      font-size: 70px;
+      font-family: 'Caveat', cursive;
+      color: #333;
+      animation: fadeIn 1.6s ease-in-out forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 
 <body>
-  <div class="box">
-    <h2>For You 💛</h2>
-    <p>Here’s what I never say enough: thank you for the way you love, the way you show up, and the way you stay. You make things lighter without even trying.</p>
-  </div>
+
+  <div class="emoji left">✨</div>
+  <div class="emoji right">💛</div>
+
+  <h1>ADHISHHH</h1>
+
 </body>
 </html>
