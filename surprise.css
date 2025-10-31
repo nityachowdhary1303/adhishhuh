@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #fff4b8, #ffdca4);
+  font-family: 'Poppins', sans-serif;
+}
+
+.box {
+  background: rgba(255,255,255,0.65);
+  padding: 35px 45px;
+  border-radius: 18px;
+  backdrop-filter: blur(8px);
+  text-align: center;
+  max-width: 550px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+h2 {
+  font-family: 'Caveat', cursive;
+  font-size: 50px;
+  margin-bottom: 15px;
+  color: #5a4632;
+}
+
+p {
+  font-size: 18px;
+  color: #6b523b;
+  line-height: 1.6;
+}
