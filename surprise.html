@@ -8,37 +8,52 @@
     body {
       margin: 0;
       height: 100vh;
-      background: #ffeb73; /* aesthetic soft yellow */
+      background: #ffeb73;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       font-family: 'Poppins', sans-serif;
       text-align: center;
+      padding: 40px;
+      box-sizing: border-box;
     }
 
     .emoji {
       font-size: 120px;
       opacity: 0.18;
       position: absolute;
+      user-select: none;
     }
 
     .emoji.left {
-      top: 20%;
-      left: 15%;
+      top: 15%;
+      left: 10%;
     }
 
     .emoji.right {
-      bottom: 15%;
-      right: 10%;
+      bottom: 12%;
+      right: 12%;
+    }
+
+    .message-box {
+      max-width: 700px;
+      background: rgba(255,255,255,0.55);
+      padding: 35px;
+      border-radius: 18px;
+      backdrop-filter: blur(8px);
+      color: #4a3a2e;
+      font-size: 18px;
+      line-height: 1.6;
+      animation: fadeIn 1.8s ease-in-out forwards;
+      opacity: 0;
     }
 
     h1 {
-      font-size: 70px;
       font-family: 'Caveat', cursive;
-      color: #333;
-      animation: fadeIn 1.6s ease-in-out forwards;
-      opacity: 0;
+      font-size: 55px;
+      margin-bottom: 15px;
+      color: #3d2e1f;
     }
 
     @keyframes fadeIn {
@@ -50,10 +65,27 @@
 
 <body>
 
-  <div class="emoji left">✨</div>
-  <div class="emoji right">💛</div>
+  <div class="emoji left">💛</div>
+  <div class="emoji right">🫂</div>
 
-  <h1>ADHISHHH</h1>
+  <div class="message-box">
+    <h1>Hi Adhish,</h1>
+    You’re 24 now… so old omg. But listen, I’m really happy to have you in my life. We’ve actually come a long way and I’m glad we did, because this means a lot to me. You matter to me. A lot.<br><br>
+    You should stop teasing me… but also don’t.<br><br>
+    I’ll always be on your side. I know you’ll be on mine too. I can’t wait for more memories with you, especially when you finally come to Bangalore. I really hope that trip happens the way we imagine it, because I want all of it: the laughs, the roaming, the stupid conversations, everything.<br><br>
+    And about that one day I made you upset, I was honestly so worried. I really don’t want to see you like that again. I’ll try my best to never let that happen. You’re too important.<br><br>
+    It’s crazy how you ended up being this special. I still remember the first time I came to your Bangalore flat, when we weren’t even close. Us walking down your lane, smoking, talking about life. And all those small moments after — chilling, drinking, music, just talking — they stayed with me.<br><br>
+    And right now, you’re working (while I was struggling to make this website). You’re always working. You’re so disciplined in your own way and I genuinely admire that about you. I hope I learn some of that from you. I genuinely believe you’ll get everything you’re working for. You deserve to see your dreams come true.<br><br>
+    Chalo, enough tareef for you. Don’t get used to it.<br>
+    Also stop annoying me (but also don’t).<br>
+    And don’t be sad, huh.<br><br>
+    Only 7 more days for me to be here, uske baad I’ll wait for you to be in Bangalore, and for us to go on that trip. I’m way too excited huh.<br><br>
+    Happiest Birthday to you.<br>
+    I really wish you the best, in everything.<br><br>
+    I know you don’t get excited about your birthdays, but I am excited for you.💛
+    With me in your year
+    Always
+  </div>
 
 </body>
 </html>
