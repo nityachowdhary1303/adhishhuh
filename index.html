@@ -6,29 +6,45 @@
   <title>Happy Birthday Adhish</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <div class="container">
     <h1>Happy Birthday Adhishhhhh!!</h1>
-    <p class="subtext">I hope you have the craziest birthday. 24 actually looks good on you, grown, but still fun, still bright, still the same chaotic child at heart. Never change.</p>
-   <p class="note">thank you for being you! I love you for the laughter, the chaos, and the kind of presence that makes life feel lighter.</p>
 
-<button id="surpriseButton">click me</button>
+    <p class="subtext">
+      I hope you have the craziest birthday💛. 24 actually looks good on you, grown, but still fun, still bright, still the same chaotic child at heart. Never change.
+    </p>
 
-<p id="hiddenMessage" style="display:none; margin-top: 15px;">
-  okay listen. i just want to say:
-  thank you for being exactly who you are.
-  for showing up. for laughing and teasing me everytime, and cracking your jokes huh.
-  for caring and being there for me in all ways.
-  i'm really glad to have a friend like you, and im sure you're lucky too huh.
-</p>
+    <p class="note">
+      thank you for being you! I love you for the laughter, the chaos, and the kind of presence that makes life feel lighter.
+    </p>
 
-<script>
-document.getElementById("surpriseButton").onclick = function() {
-  var message = document.getElementById("hiddenMessage");
-  if (message.style.display === "none") {
-    message.style.display = "block";
-  } else {
-    message.style.display = "none";
-  }
-}
-</script
+    <!-- THIS is the real button -->
+    <button id="surpriseButton">click me</button>
+
+    <!-- This is the secret message -->
+    <p id="hiddenMessage" style="display:none; margin-top: 15px;">
+      okay listen. i just want to say:
+      thank you for being exactly who you are.
+      for showing up. for laughing and teasing me everytime, and cracking your jokes huh.
+      for caring and being there for me in all ways.
+      i'm really glad to have a friend like you, and im sure you're lucky too huh.
+    </p>
+  </div>
+
+  <script>
+    const btn = document.getElementById("surpriseButton");
+    const msg = document.getElementById("hiddenMessage");
+
+    btn.addEventListener("click", () => {
+      if (msg.style.display === "none") {
+        msg.style.display = "block";
+        btn.textContent = "hide message";
+      } else {
+        msg.style.display = "none";
+        btn.textContent = "click me";
+      }
+    });
+  </script>
+</body>
+</html>
